@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("ecole.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* En-tête créatif */
+/* En-tête créatif avec image */
+.eco-header {
+  background: url("image.png") no-repeat center center;
+  background-size: cover; /* l’image occupe tout l’espace */
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 5px solid rgba(0,0,0,0.3); /* petite séparation */
+}
+
+/* Titre et sous-titre lisibles sur l’image */
+.eco-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* ombre pour lisibilité */
+}
+
+.eco-header {
+  background: url("image.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Logo fixé sur la bordure gauche */
+.logo-left {
+  position: absolute;
+  top: 20px;      /* distance du haut */
+  left: 0;        /* collé à la bordure gauche */
+  height: 40px;   /* logo petit */
+  width: auto;    /* conserve les proportions */
+  margin-left: 5px; /* petit espace pour respirer */
+  z-index: 10;    /* reste au-dessus du fond */
+}
+
+/* Formulaire créatif */
+.form-section {
+  margin: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent */
+  border-left: 8px solid #1c07a5;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.form-section h2 {
+  color: #073d8e;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #0924ad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #061b84;
+}
+
+h2.liste-titre {
+  margin-left: 20px;
+  color: white; /* titre en blanc */
+}
+
+/* Liste des signalements avec fond vert */
+#listeSignalements {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(15, 10, 91, 0.85);
+  color: white;
+  border-radius: 8px;
+}
+.admin-title {
+  font-size: 2.2em;
+  color: #0e237a;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.admin-subtitle {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #444;
+  margin-top: 5px;
+}
+
+.admin-buttons {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.admin-buttons button {
+  background-color: #031773;
+  color: white;
+  padding: 18px 50px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.admin-buttons button:hover {
+  background-color: #052358;
+  transform: scale(1.08); /* effet zoom */
+}
+
+/* Bloc signalements et stats avec overlay vert */
+#listeAdmin, #statsBox {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(3, 32, 95, 0.85);
+  color: white;
+  border-radius: 8px;
+}
