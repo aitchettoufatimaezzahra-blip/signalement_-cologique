@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>🌱 Signalement Écologique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- En-tête créatif -->
+  <header class="eco-header">
+  <img src="logo.png" alt="Logo de l'école" class="logo-left">
+  <h1>🌍 Ensemble pour un Campus Éco‑Responsable</h1>
+  <p class="subtitle">Signalez, agissez, protégez notre environnement</p>
+</header>
+
+
+  <!-- Formulaire -->
+  <section class="form-section">
+    <h2>Soumettre un signalement</h2>
+    <form id="signalementForm">
+      <label for="titre">Titre :</label>
+      <input type="text" id="titre" name="titre" required><br><br>
+
+      <label for="description">Description :</label>
+      <textarea id="description" name="description" required></textarea><br><br>
+
+      <label for="type">Type :</label>
+      <select id="type" name="type" required>
+        <option value="déchets">Déchet</option>
+        <option value="eau">Eau</option>
+        <option value="énergie">Énergie</option>
+      </select><br><br>
+
+      <input type="text" id="nom" placeholder="Votre nom"><br>
+      <label>
+        <input type="checkbox" id="anonymousCheck"> Envoyer anonymement
+      </label><br>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Messages -->
+  <div id="message"></div>
+
+  <!-- Bouton pour afficher/masquer la liste -->
+  <h2 class="liste-titre">Liste des signalements</h2>
+  <button id="btnListe">Voir les signalements</button>
+  <div id="listeSignalements" style="display:none;"></div>
+
+  <!-- Suggestions -->
+  <div id="suggestionBox"></div>
+
+  <!-- Script JS -->
+  <script src="formulaire.js"></script>
+</body>
+</html>
